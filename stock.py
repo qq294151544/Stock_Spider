@@ -20,7 +20,6 @@ class StockSpider(object):
         self.driver.quit()
 
     def get_data_list(self):
-        '''获取租房信息列表'''
         # 获取本页所有股票信息列表
         li_s = self.driver.find_elements_by_xpath('//ul[@id="list-body"]/li')
         # 遍历列表
